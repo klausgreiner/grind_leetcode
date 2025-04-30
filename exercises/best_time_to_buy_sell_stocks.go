@@ -32,7 +32,7 @@ import (
 // 1 <= prices.length <= 10elavado5
 // 0 <= prices[i] <= 10elavado4
 
-func MYDUMBNOTWORKINGSOLUTION(prices []int) int {
+func InitialNonOtimalApproach(prices []int) int {
 	length := len(prices)
 	maxArrayLength := int(math.Pow(10, 5))
 	maxArrayValue := int(math.Pow(10, 4))
