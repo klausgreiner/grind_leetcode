@@ -9,7 +9,7 @@ type exerciseRunner func()
 var exerciseMap = map[string]exerciseRunner{
 	"20":  RunValidParenthesesTests,
 	"121": RunValidMaxProfitTest,
-	// Add other exercises here
+	"125": RunValidIsPalindromeTests,
 }
 
 // RunExercise looks up the exercise by its identifier and runs it if found.
