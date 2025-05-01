@@ -10,6 +10,7 @@ var exerciseMap = map[string]exerciseRunner{
 	"20":  RunValidParenthesesTests,
 	"121": RunValidMaxProfitTest,
 	"125": RunValidIsPalindromeTests,
+	"21":  RunMergeTwoListsTests,
 }
 
 // RunExercise looks up the exercise by its identifier and runs it if found.

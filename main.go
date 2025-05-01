@@ -14,7 +14,7 @@ func main() {
 	// exerciseIdentifier := os.Args[1]
 
 	// Call the central exercise runner
-	if !exercises.RunExercise("125") {
+	if !exercises.RunExercise("21") {
 		// Optional: Handle the case where the exercise was not found,
 		// though RunExercise already prints a message.
 	}
