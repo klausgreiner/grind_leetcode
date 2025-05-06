@@ -1,8 +1,6 @@
 package main
 
-import (
-	"leetcode/exercises"
-)
+import "leetcode/study"
 
 func main() {
 	// if len(os.Args) < 2 {
@@ -14,8 +12,10 @@ func main() {
 	// exerciseIdentifier := os.Args[1]
 
 	// Call the central exercise runner
-	if !exercises.RunExercise("21") {
-		// Optional: Handle the case where the exercise was not found,
-		// though RunExercise already prints a message.
-	}
+	// if !exercises.RunExercise("21") {
+	// 	// Optional: Handle the case where the exercise was not found,
+	// 	// though RunExercise already prints a message.
+	// }
+
+	study.RunStudy()
 }

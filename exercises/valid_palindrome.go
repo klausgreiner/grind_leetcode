@@ -74,17 +74,17 @@ func removeNonAlphanumericToLower(s string) string {
 	return builder.String()
 }
 
-func isPalindromeTwo(s string) bool {
-	cleanedString := []rune(removeNonAlphanumericToLower(s))
-	n := len(cleanedString)
+// func isPalindromeTwo(s string) bool {
+// 	cleanedString := []rune(removeNonAlphanumericToLower(s))
+// 	n := len(cleanedString)
 
-	for i := 0; i < n/2; i++ {
-		if cleanedString[n-1-i] != cleanedString[i] {
-			return false
-		}
-	}
-	return true
-}
+//		for i := 0; i < n/2; i++ {
+//			if cleanedString[n-1-i] != cleanedString[i] {
+//				return false
+//			}
+//		}
+//		return true
+//	}
 func isPalindrome(s string) bool {
 	left, right := 0, len(s)-1
 
