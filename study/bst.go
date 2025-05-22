@@ -74,6 +74,21 @@ func Search(value int, node *TreeNode) bool {
 
 }
 
+func searchForDelete(value int, node *TreeNode, father *TreeNode, direction int) (*TreeNode, bool, *TreeNode, int) {
+
+	if node == nil {
+		return nil, false, nil, 0
+
+	}
+	if value == node.Val {
+		return node, true, father, direction
+	} else if node.Val > value {
+		return searchForDelete(value, node.Left, node, 1)
+	} else {
+		return searchForDelete(value, node.Right, node, 2)
+	}
+}
+
 // 3. Delete(value)
 // Remove a node from the BST:
 
@@ -82,6 +97,35 @@ func Search(value int, node *TreeNode) bool {
 // If it has one child → replace with child.
 
 // If it has two children → replace with the in-order successor or predecessor.
+
+func Delete(value int, node *TreeNode) bool {
+	var foundNode, result, father, direction = searchForDelete(value, node, nil, 0)
+
+	if foundNode != nil && foundNode.Left == nil && foundNode.Right == nil {
+		fmt.Println("removing leaf node")
+		if direction == 1 {
+			father.Left = nil
+		} else {
+			father.Right = nil
+		}
+		return true
+	}
+
+	if foundNode != nil && foundNode.Left != nil && foundNode.Right == nil {
+		fmt.Println("swap left children with father")
+
+	}
+	if foundNode != nil && foundNode.Left == nil && foundNode.Right != nil {
+		fmt.Println("swap right children with father")
+
+	}
+	if foundNode != nil && foundNode.Left != nil && foundNode.Right != nil {
+		fmt.Println("Restructure children")
+
+	}
+
+	return result
+}
 
 // 4. InOrderTraversal()
 // Traverse the tree in Left → Node → Right order.

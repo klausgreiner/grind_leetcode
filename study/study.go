@@ -17,8 +17,13 @@ func RunStudy() {
 
 	VisualizeBST(root, 5)
 
-	print("\n", Search(5, root))
-	print("\n", Search(13, root))
-	print("\n", Search(3, root))
-	print("\n", Search(1, root))
+	// print("\n", Search(5, root))
+	// print("\n", Search(13, root))
+	// print("\n", Search(3, root))
+	// print("\n", Search(1, root))
+
+	Delete(12, root)
+
+	VisualizeBST(root, 5)
+
 }
