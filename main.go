@@ -12,7 +12,7 @@ func main() {
 	// exerciseIdentifier := os.Args[1]
 
 	// Call the central exercise runner
-	if !exercises.RunExercise("Q2") {
+	if !exercises.RunExercise("Q3") {
 		// Optional: Handle the case where the exercise was not found,
 		// though RunExercise already prints a message.
 	}

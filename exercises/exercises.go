@@ -11,7 +11,8 @@ var exerciseMap = map[string]exerciseRunner{
 	// "121": RunValidMaxProfitTest,
 	// "125": RunValidIsPalindromeTests,
 	// "21":  RunMergeTwoListsTests,
-	"Q2": RunValidShuffle,
+	// "Q2": RunValidShuffle,
+	"Q3": RunMaxConsecutiveOnes,
 }
 
 // RunExercise looks up the exercise by its identifier and runs it if found.
