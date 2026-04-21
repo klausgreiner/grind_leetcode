@@ -11,7 +11,7 @@
             "mode": "auto",
             "program": "${workspaceFolder}", //  Changed from "${fileDirname}"
             "args": [
-                "Q3"
+                "1502"
             ]
         }
     ]

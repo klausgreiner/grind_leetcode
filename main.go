@@ -1,18 +1,22 @@
 package main
 
-import "leetcode/exercises"
+import (
+	"fmt"
+	"leetcode/exercises"
+	"os"
+)
 
 func main() {
-	// if len(os.Args) < 2 {
-	// 	fmt.Println("Please provide the exercise name or number as an argument.")
-	// 	// TODO: Potentially list available exercises dynamically from the map
-	// 	return
-	// }
+	if len(os.Args) < 2 {
+		fmt.Println("Please provide the exercise name or number as an argument.")
+		// TODO: Potentially list available exercises dynamically from the map
+		return
+	}
 
-	// exerciseIdentifier := os.Args[1]
+	exerciseIdentifier := os.Args[1]
 
 	// Call the central exercise runner
-	if !exercises.RunExercise("Q3") {
+	if !exercises.RunExercise(exerciseIdentifier) {
 		// Optional: Handle the case where the exercise was not found,
 		// though RunExercise already prints a message.
 	}

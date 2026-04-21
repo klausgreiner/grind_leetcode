@@ -7,12 +7,14 @@ type exerciseRunner func()
 
 // exerciseMap stores the mapping between exercise identifiers and their runner functions.
 var exerciseMap = map[string]exerciseRunner{
-	// "20":  RunValidParenthesesTests,
-	// "121": RunValidMaxProfitTest,
-	// "125": RunValidIsPalindromeTests,
-	// "21":  RunMergeTwoListsTests,
-	// "Q2": RunValidShuffle,
-	"Q3": RunMaxConsecutiveOnes,
+	"20":   RunValidParenthesesTests,
+	"121":  RunValidMaxProfitTest,
+	"125":  RunValidIsPalindromeTests,
+	"21":   RunMergeTwoListsTests,
+	"1929": RunConcatenation,
+	"1470": RunValidShuffle,
+	"485":  RunMaxConsecutiveOnes,
+	"1502": RunArithmeticProgression,
 }
 
 // RunExercise looks up the exercise by its identifier and runs it if found.
