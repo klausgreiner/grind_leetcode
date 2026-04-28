@@ -15,6 +15,7 @@ var exerciseMap = map[string]exerciseRunner{
 	"1470": RunValidShuffle,
 	"485":  RunMaxConsecutiveOnes,
 	"1502": RunArithmeticProgression,
+	"733":  RunFloodFill,
 }
 
 // RunExercise looks up the exercise by its identifier and runs it if found.
